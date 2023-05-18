@@ -32,19 +32,24 @@ header {
     transition: 0.1s ease;
 }
 
-.nav a{
+.nav a {
     color: black;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
     margin: 0;
     font-family: 'Lato';
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.nav :hover{
+.nav {
+    margin-right: 100px;
+}
+
+.nav :hover {
     color: rgb(255, 255, 255);
 }
 
@@ -66,7 +71,8 @@ h1 {
     font-family: 'Lato';
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Lato';
 }
 
@@ -83,7 +89,7 @@ h2, h3 {
 
 section {
     margin-bottom: auto;
-    
+
 }
 
 .main h2 {
@@ -103,7 +109,7 @@ section {
 }
 
 .info {
-    padding: 20px 50px; 
+    padding: 20px 50px;
     margin-left: 70px;
     margin-top: 80px;
     transition: 0.3s ease;
@@ -159,7 +165,7 @@ section {
     transform: scale(1.1);
 }
 
-.social a{
+.social a {
     padding-right: 15px;
     padding-left: 15px;
     color: white;
@@ -221,4 +227,63 @@ section {
     color: white;
     font-size: 6em;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjustments for small screens */
+    .Logo {
+        margin-left: 20px;
+    }
+
+    .nav {
+        margin-right: 20px;
+    }
+
+    .info {
+        margin-left: 20px;
+    }
+
+    .btn,
+    .resume {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    /* Adjustments for extra small screens */
+    .Logo {
+        margin-left: 10px;
+        font-size: 1.5em;
+    }
+
+    .nav {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    .info {
+        margin-left: 10px;
+        padding: 15px;
+    }
+
+    .btn,
+    .resume {
+        font-size: 1em;
+        padding: 0.8em 1.5em;
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
 }
